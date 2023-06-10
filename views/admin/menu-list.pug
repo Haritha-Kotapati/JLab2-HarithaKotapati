@@ -1,0 +1,23 @@
+extends ../layout 
+
+block main-content 
+    h1 Administer menu links 
+    a(id="addLinkBtn", href="/admin/menu/add") + Add menu link 
+    table 
+        thead 
+            tr 
+                th link
+                th Operations
+        tbody 
+            each link in menu 
+                tr 
+                    td #{link.name}
+                    td 
+                        form(class="editBtn",action="/admin/menu/edit") 
+                            input(type="hidden", name="linkId", value=link._id)
+                            button(type="submit") Edit
+                    td
+                        form(id="deleteBtn",action="/admin/menu/delete")
+                            input(type="hidden", name="linkId", value=link._id)
+                            button(type="submit") Delete
+                            

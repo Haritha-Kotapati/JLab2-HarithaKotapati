@@ -1,0 +1,17 @@
+extends ../layout 
+
+block main-content 
+    h1 Edit Menu Link
+    form(id="edit-form",method="post", action="/admin/menu/edit/submit")
+        div 
+            label(for="weight") Weight: 
+            input(id="weight", name="weight", type="number", placeholder="e.g. 0", value=selectedMenu.weight)
+        div 
+            label(for="path") Path: 
+            input(id="path", name="path", type="text", placeholder="e.g. /about", value=selectedMenu.path)
+        div 
+            label(for="name") Link text: 
+            input(id="name", name="name", type="text", placeholder="e.g. About", value=selectedMenu.name)
+        div(class="editBtn")
+            input(type="hidden", name="linkId", value=selectedMenu._id)
+            button(type="submit") Edit link

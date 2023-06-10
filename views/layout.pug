@@ -1,0 +1,26 @@
+doctype html 
+html 
+    head 
+        meta(charset="utf-8")
+        title #{title} | Furniture World
+        link(rel="stylesheet", type="text/css", href="/css/styless.css")
+        block scripts 
+            scripts(src="/js/script.js")
+    
+
+    body 
+        header#header 
+            .header-content 
+                nav(id="main-menu", aria-label = "Main navigation")
+                    ul 
+                        each link in links
+                            li 
+                                a(href=link.path) #{link.name}
+                    //- a(href="/") Home 
+                    //- a(href="/about") About 
+                    //- a(href="#") Products
+
+        main#main 
+            block main-content 
+        footer#footer 
+            p &copy; HarithaKotapati, 2023.

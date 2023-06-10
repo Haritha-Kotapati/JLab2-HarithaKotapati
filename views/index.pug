@@ -1,0 +1,44 @@
+extends layout 
+
+block scripts 
+    script(src="/js/script.js")
+
+block main-content 
+    
+    section#banner
+        h1 Furniture World
+        p Discover the Perfect Furniture Pieces for Your Home.
+        //- img(src="./images/Furniture1.jpg", alt="Image of")
+
+    section#products-list 
+        h2 Some curated designs for your home 
+        //- .product 
+        //-     .product-item 
+        //-         h4 Chair 
+        //-         img(src="./images/Furniture1.jpg", alt="")
+        //-         button View
+        //-     .product-item 
+        //-         h4 Sofa Aquatica
+        //-         img(src="./images/Furniture2.jpg", alt="")
+        //-         button View
+        //-     .product-item 
+        //-         h4 Sofa Sunny 
+        //-         img(src="./images/Furniture3.jpg", alt="")
+        //-         button View
+        //-     .product-item 
+        //-         h4 Sofa Freshly
+        //-         img(src="./images/Furniture4.jpg", alt="")
+        //-         button View
+        .product
+            each item in furniture
+                .product-item 
+                    img(src=item.image, alt=item.name)
+                    h3 #{ item.name }
+                    p Type: #{item.furniture_type}
+                    p #{item.description}
+
+
+//- Image sources from Unsplash.com
+//- 
+//- https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZnVybml0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60
+//- https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZnVybml0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60

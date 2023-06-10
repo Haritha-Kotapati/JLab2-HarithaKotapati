@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "64755430fc54f9344dab8c90"
+  },
+  "weight": 0,
+  "path": "/",
+  "name": "Home"
+},
+{
+  "_id": {
+    "$oid": "64755583dea93993fee3c970"
+  },
+  "weight": 1,
+  "path": "/about",
+  "name": "About"
+},
+{
+  "_id": {
+    "$oid": "6476742d0ef48aa33ee75489"
+  },
+  "weight": "6",
+  "path": "/work-with-us",
+  "name": "Work with Us"
+},
+{
+  "_id": {
+    "$oid": "64767ae41cc9fe9edceaa58e"
+  },
+  "weight": "3",
+  "path": "/our-team",
+  "name": "Our Team"
+}]

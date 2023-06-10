@@ -1,0 +1,32 @@
+extends layout
+
+//- block title
+//-   | Contact Us - Furniture World
+
+block main-content
+  section#banner
+    h1 Contact Us
+    p We'd Love to Hear From You! Reach Out for Any Inquiries or Feedback.
+
+
+  section#contact-form
+    h2 Contact Form
+    form(action="/contact", method="POST")
+        .field 
+            label(for="name") Your Name
+            input(type="text", id="name", name="name", placeholder="Enter your name", required)
+        .field 
+            label(for="email") Email Address
+            input(type="email", id="email", name="email", placeholder="Enter your email", required)
+        .field 
+            label(for="message") Message
+            textarea(id="message", name="message", placeholder="Enter your message", rows="5", required)
+        
+        button(type="submit") Send Message
+
+  section#contact-info
+    h2 Contact Information
+    ul
+      li Phone: +1 123-456-7890
+      li Email: info@furnitureworld.com
+      li Address: 123 Main Street, City, Country
