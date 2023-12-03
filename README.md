@@ -6,14 +6,21 @@
 4.	Have also created a collection to populate blogs from the database.
 5. Styled with CSS Frameworks and responsiveness to tablet and mobile devices. 
 
-# Installastion Guide
-Install Node.js if you don't have it on your system.
-Check the version using the below commands
-1. Node -v
-2. Npm -v
-Them initiate the Node_modules folder with the help of below command in the terminal of the located project folder.
-  npm Install
-Now, the node_modules set up is completed.
-Run the project by the below command
-  Node index.js
-The web page opens in localhost.
+# Installation Guide
+
+1. **Install Node.js:**
+   If Node.js is not already installed on your system, download and install it from [Node.js official website](https://nodejs.org/).
+
+2. **Check Node.js and npm Versions:**
+   Open your terminal and run the following commands to verify the installed versions:
+   ```bash
+   node -v
+   npm -v
+3. **Initialize Node_modules:**
+   Navigate to your project folder using the terminal and run the following command to initialize the node_modules folder:
+   npm install
+5. **Run the Project:**
+   Once the node_modules setup is complete, run your project using the following command:
+   node index.js
+7. **Access the Web Page:**
+   Open a web browser and navigate to the specified address (e.g., http://localhost:3000). You should see your application running.
